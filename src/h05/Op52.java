@@ -58,11 +58,11 @@ public class Op52 extends Applet {
         g.drawString("80", 25, 320 );
         g.drawString("100", 25, 300 );
 
-        g.setColor(Color.red);
+        g.setColor(Valerie);
         g.drawString("Valerie", 50, 420 );
-        g.setColor(Color.green);
+        g.setColor(Jeroen);
         g.drawString("Jeroen", 90, 420 );
-        g.setColor(Color.blue);
+        g.setColor(Hans);
         g.drawString("Hans", 130, 420 );
     }
 }
