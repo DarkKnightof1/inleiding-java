@@ -3,7 +3,17 @@
     <words>
       <w>breedte</w>
       <w>deel</w>
+      <w>eendag</w>
+      <w>eenjaar</w>
+      <w>eenuur</w>
       <w>gewicht</w>
+      <w>jaar</w>
+      <w>seconden</w>
+      <w>totaal</w>
+      <w>totaaldagenineenjaar</w>
+      <w>totaalminutenineenuur</w>
+      <w>totaalsecondenineenminuut</w>
+      <w>totaalurenineendag</w>
     </words>
   </dictionary>
 </component>
