@@ -35,5 +35,4 @@ public class Op61 extends Applet {
         g.drawString("Mischa's deel  €" + Mischadeel, 50,160);
 
     }
-
 }
