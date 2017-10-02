@@ -17,7 +17,7 @@ public class Op102 extends Applet {
         tekstvak = new TextField("", 5);
         tekstvak.addActionListener( new VakListener() );
         tekst = "";
-        tekst = "";
+        tekst2 = "";
         label = new Label("Geef uw leeftijd in en druk op enter" );
 
         add( label );

@@ -6,7 +6,7 @@ import java.awt.event.*;
 
 public class Op103 extends Applet {
 
-    int leeftijd;
+    int maanden;
     int eind;
     int eind2;
     TextField tekstvak;
@@ -17,7 +17,7 @@ public class Op103 extends Applet {
         tekstvak = new TextField("", 5);
         tekstvak.addActionListener( new VakListener() );
         tekst = "";
-        tekst = "";
+        tekst2 = "";
         label = new Label("Geef het maand nummer en druk op enter" );
 
         add( label );
@@ -34,63 +34,63 @@ public class Op103 extends Applet {
             String s;
 
             s = tekstvak.getText();
-            leeftijd = Integer.parseInt(s);
-            if (leeftijd == 1) {
+            maanden = Integer.parseInt(s);
+            if (maanden == 1) {
                 tekst = "Januari 31 dagen";
                 repaint();
             }
 
-            if (leeftijd == 2) {
+            if (maanden == 2) {
                 tekst = "Februarie 28 dagen";
                 repaint();
             }
 
-            if (leeftijd == 3) {
+            if (maanden == 3) {
                 tekst = "Maart 31 dagen";
                 repaint();
             }
 
-            if (leeftijd == 4) {
+            if (maanden == 4) {
                 tekst = "April 30 dagen";
                 repaint();
             }
 
-            if (leeftijd == 5) {
+            if (maanden == 5) {
                 tekst = "Mei 31 dagen";
                 repaint();
             }
 
-            if (leeftijd == 6) {
+            if (maanden == 6) {
                 tekst = "Juni 30 dagen";
                 repaint();
             }
 
-            if (leeftijd == 7) {
+            if (maanden == 7) {
                 tekst = "Juli 31 dagen";
                 repaint();
             }
 
-            if (leeftijd == 8) {
+            if (maanden == 8) {
                 tekst = "Augustus 31 dagen";
                 repaint();
             }
 
-            if (leeftijd == 9) {
+            if (maanden == 9) {
                 tekst = "September 30 dagen";
                 repaint();
             }
 
-            if (leeftijd == 10) {
+            if (maanden == 10) {
                 tekst = "Oktober 31 dagen";
                 repaint();
             }
 
-            if (leeftijd == 11) {
+            if (maanden == 11) {
                 tekst = "November 30 dagen";
                 repaint();
             }
 
-            if (leeftijd == 12) {
+            if (maanden == 12) {
                 tekst = "December 31 dagen";
                 repaint();
             }
