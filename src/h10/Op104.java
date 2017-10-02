@@ -10,7 +10,7 @@ public class Op104 extends Applet {
     int maanden;
     TextField tekstvak1, tekstvak2;
     Label label1, label2;
-    String tekst, tekst2;
+    String tekst;
 
     public void init() {
         tekstvak1 = new TextField("", 5);
@@ -18,7 +18,6 @@ public class Op104 extends Applet {
         tekstvak2 = new TextField("", 5);
         tekstvak2.addActionListener( new VakListener() );
         tekst = "";
-        tekst2 = "";
         label1 = new Label("Geef het maand nummer en druk op enter" );
         label2 = new Label ("Geef het jaar en druk enter op enter");
         add( label1 );
