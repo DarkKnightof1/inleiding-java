@@ -72,5 +72,5 @@ public class Op2 extends Applet {
             repaint();
         }
     }
-    
+
 }
