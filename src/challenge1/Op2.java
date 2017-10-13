@@ -29,21 +29,20 @@ public class Op2 extends Applet {
         //Glace Bay Canada - 5 uur
         if (Nederlandtijd >= 0 && Nederlandtijd < 24) {
             g.drawString("Tijd in Glace Bay: " + Canadatijd + ":00 uur", x, y);
-        }
             //Queensland Australië + 8 uur
-            if (Nederlandtijd >= 0 && Nederlandtijd < 24) {
-                g.drawString("Tijd in Queensland: " + Australietijd + ":00 uur", x, y+15);
-            }
+                y += 15;
+                g.drawString("Tijd in Queensland: " + Australietijd + ":00 uur", x, y);
                 //Hong Kong China + 6 uur
-                if (Nederlandtijd >= 0 && Nederlandtijd < 24) {
-                    g.drawString("Tijd in Hong Kong: " + Chinatijd + ":00 uur", x, y+30);
-                }
+                    y += 15;
+                    g.drawString("Tijd in Hong Kong: " + Chinatijd + ":00 uur", x, y);
                     //Adana Turkije + 1 uur
-                    if (Nederlandtijd >= 0 && Nederlandtijd < 24) {
-                        g.drawString("Tijd in Adana: " + Turkijetijd + ":00 uur", x, y+45);
+                        y += 15;
+                        g.drawString("Tijd in Adana: " + Turkijetijd + ":00 uur", x, y);
                     }
-        if (Nederlandtijd > 23) {
-            g.drawString("Ongeldige invoer", x, y);
+                    else {
+                        if (Nederlandtijd > 23) {
+                            g.drawString("Ongeldige invoer", x, y);
+                         }
         }
     }
 
