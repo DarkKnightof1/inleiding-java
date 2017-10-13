@@ -6,37 +6,29 @@ package challenge1;
 
 public class Op1 extends Applet {
 
-    Color Red;
-    int GValerie;
-    int GJeroen;
-    int GHans;
-    int breedte;
-    int gewichtVal;
-    int gewichtJer;
-    int gewichtHan;
-    int ynullijn;
-    String schermtekst1, schermtekst2, schermtekst3;
-    TextField tekstvak1, tekstvak2, tekstvak3;
-    Button knop1;
-    Label label1, label2, label3;
+    private Color Red;
+    private int GValerie;
+    private int GJeroen;
+    private int GHans;
+    private int breedte;
+    private int gewichtVal;
+    private int gewichtJer;
+    private int gewichtHan;
+    private int ynullijn;
+    private TextField tekstvak1, tekstvak2, tekstvak3;
 
     public void init() {
         Red = Color.RED;
         breedte = 40;
         ynullijn = 200;
-        schermtekst1 = "";
-        schermtekst2 = "";
-        schermtekst3 = "";
         tekstvak1 = new TextField("", 4);
         tekstvak2 = new TextField("", 4);
         tekstvak3 = new TextField("", 4);
-        label1 = new Label ("Valerie");
-        label2 = new Label ("Jeroen");
-        label3 = new Label ("Hans");
-        knop1 = new Button("Toon");
+        Label label1 = new Label("Valerie");
+        Label label2 = new Label("Jeroen");
+        Label label3 = new Label("Hans");
+        Button knop1 = new Button("Toon");
         knop1.addActionListener( new KnopListener1() );
-        knop1.addActionListener( new KnopListener2() );
-        knop1.addActionListener( new KnopListener3() );
         add(label1);
         add(tekstvak1);
         add(label2);
@@ -86,31 +78,21 @@ public class Op1 extends Applet {
 
     class KnopListener1 implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            String s;
-            s = tekstvak1.getText();
-            GValerie = Integer.parseInt(s);
+            String a;
+            String b;
+            String c;
+            a = tekstvak1.getText();
+            b = tekstvak2.getText();
+            c = tekstvak3.getText();
+            GValerie = Integer.parseInt(a);
             gewichtVal = (ynullijn - GValerie);
-            repaint();
-        }
-    }
-
-    class KnopListener2 implements ActionListener {
-        public void actionPerformed(ActionEvent e) {
-            String s;
-            s = tekstvak2.getText();
-            GJeroen = Integer.parseInt(s);
+            GJeroen = Integer.parseInt(b);
             gewichtJer = (ynullijn - GJeroen);
-            repaint();
-        }
-    }
-
-    class KnopListener3 implements ActionListener {
-        public void actionPerformed(ActionEvent e) {
-            String s;
-            s = tekstvak3.getText();
-            GHans = Integer.parseInt(s);
+            GHans = Integer.parseInt(c);
             gewichtHan = (ynullijn - GHans);
             repaint();
         }
     }
+
+
 }
