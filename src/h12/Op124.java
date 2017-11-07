@@ -29,7 +29,7 @@ public class Op124 extends Applet {
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                
+
             }
         });
 
