@@ -6,9 +6,10 @@ import java.awt.event.*;
 
 public class Op124 extends Applet {
     boolean gevonden;
-    int[] salaris = {50, 100, 150, 200, 250, 300, 350, 400, 450, 500};
-    int gezocht;
+    int[] salaris = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     int getal;
+    int teller;
+    int invoer;
     TextField textField;
     Button button;
 
@@ -16,36 +17,42 @@ public class Op124 extends Applet {
         textField = new TextField();
         add(textField);
         button = new Button("Ok");
-        add(button);
-        gevonden = false;
-        int teller = 0;
-        while (teller < salaris.length) {
-            if (salaris[teller] == getal) {
-                gevonden = true;
-            }
-            teller++;
-        }
-
         button.addActionListener(new ActionListener() {
+
+
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                invoer = Integer.parseInt(textField.getText());
+                gevonden = false;
+                int i = 0;
+                while (i < salaris.length) {
+                    if (salaris[i] == invoer) {
+                        gevonden = true;
+                    }
+                    i++;
+                }
+
+                repaint();
             }
         });
-
-
+        add(button);
     }
 
-
     public void paint(Graphics g) {
-        for (int teller = 0; teller < salaris.length; teller++) {
-            g.drawString("" + salaris[teller], 50, 20 * teller + 20);
-        }
-        if (gevonden == true) {
-            g.drawString("De waarde = " + getal, 10, 50);
+        if (invoer != 0) {
+            int x1 = 50;
+            int x2 = 150;
+            int y = 70;
+                if (gevonden) {
+                    g.drawString("De waarde = " + invoer + "  De index = " + invoer, x1, y);
+                    y += 20;
 
-        } else {
-            g.drawString("De waarde is niet gevonden.", 20, 50);
-        }
+                } else {
+                    g.drawString("De waarde is niet gevonden.", x2, y);
+                }
+
+            }
+
     }
 }
