@@ -19,10 +19,8 @@ public class Op124 extends Applet {
         button = new Button("Ok");
         button.addActionListener(new ActionListener() {
 
-
             @Override
             public void actionPerformed(ActionEvent e) {
-
                 invoer = Integer.parseInt(textField.getText());
                 gevonden = false;
                 int i = 0;
@@ -32,7 +30,6 @@ public class Op124 extends Applet {
                     }
                     i++;
                 }
-
                 repaint();
             }
         });
@@ -44,15 +41,13 @@ public class Op124 extends Applet {
             int x1 = 50;
             int x2 = 150;
             int y = 70;
-                if (gevonden) {
-                    g.drawString("De waarde = " + invoer + "  De index = " + invoer, x1, y);
-                    y += 20;
+            if (gevonden) {
+                g.drawString("De waarde = " + invoer + "  De index = " + invoer, x1, y);
+                y += 20;
 
-                } else {
-                    g.drawString("De waarde is niet gevonden.", x2, y);
-                }
-
+            } else {
+                g.drawString("De waarde is niet gevonden.", x2, y);
             }
-
+        }
     }
 }
